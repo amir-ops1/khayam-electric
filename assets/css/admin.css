@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #1f2937;
+}
+
+.admin-layout {
+    min-height: 100vh;
+    display: flex;
+    direction: rtl;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: #111827;
+    color: white;
+    padding: 25px 15px;
+    flex-shrink: 0;
+}
+
+.sidebar-title {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 13px 15px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.sidebar nav a:hover {
+    background: #374151;
+    color: white;
+}
+
+/* Main */
+
+.main-content {
+    flex: 1;
+    padding: 25px;
+    min-width: 0;
+}
+
+/* Header */
+
+.header {
+    background: white;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header-user {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Product Form */
+
+form {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 22px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+form input {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    font-size: 14px;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #2563eb;
+}
+
+form button {
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px;
+
+    background: #2563eb;
+    color: white;
+
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form button:hover {
+    background: #1d4ed8;
+}
+
+/* Product Table */
+
+table {
+    width: 100%;
+    background: white;
+
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+thead {
+    background: #f9fafb;
+}
+
+th,
+td {
+    padding: 14px 16px;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+
+td button {
+    border: none;
+    border-radius: 6px;
+    padding: 7px 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .admin-layout {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .sidebar nav a {
+        white-space: nowrap;
+    }
+
+    .main-content {
+        padding: 14px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

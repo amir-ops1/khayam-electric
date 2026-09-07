@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>تسویه حساب</title>
+
+<link rel="stylesheet"
+      href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<div class="checkout-page">
+
+    <div class="checkout-form-box">
+
+        <h1 class="checkout-title">
+            اطلاعات سفارش
+        </h1>
+
+        <form class="checkout-form" id="checkoutForm">
+
+            <input
+                id="fullName"
+                type="text"
+                placeholder="نام و نام خانوادگی">
+<small class="error"></small>
+
+            <input
+                id="phone"
+                type="tel"
+                placeholder="شماره موبایل">
+<small class="error"></small>
+
+            <textarea
+                id="address"
+                placeholder="آدرس کامل"></textarea>
+<small class="error"></small>
+
+            <textarea
+                placeholder="توضیحات سفارش (اختیاری)"></textarea>
+
+            <button type="submit">
+
+                ثبت سفارش
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="checkout-summary">
+
+        <h3>
+            خلاصه سفارش
+        </h3>
+
+        <div class="checkout-items">
+
+        </div>
+
+        <div class="checkout-total">
+
+            جمع کل:
+
+            <span class="checkout-total-price">
+                0
+            </span>
+
+            تومان
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="assets/js/checkout.js"></script>
+</body>
+</html>
