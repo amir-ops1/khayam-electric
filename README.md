@@ -22,6 +22,29 @@ A responsive e-commerce web application for electrical and lighting products.
 * Mobile-friendly category navigation
 * Persian RTL interface
 
+
+
+## 📸 Screenshots
+
+### Storefront
+
+![Home Page](screenshots/home.png)
+
+### Product Page
+
+![Product Page](screenshots/product.png)
+
+### Mobile Version
+
+![Mobile Version](screenshots/mobile.png)
+
+### Admin Panel
+
+![Admin Panel](screenshots/admin.png)
+
+
+
+
 ### ⚙️ API & JavaScript
 
 * REST API integration
